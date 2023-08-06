@@ -28,10 +28,11 @@ public class Controlador extends HttpServlet {
             request.getRequestDispatcher(LOGIN).forward(request, response);
         } else {
             switch (page) {
-                case "ventas":
+                case "venta":
                     UUID uuid = UUID.randomUUID();
-                    request.setAttribute("codVenta",uuid.toString());
-                    request.setAttribute("idVenta",dao.getLastId()+1);
+                    request.setAttribute("codVenta", uuid.toString());
+                    request.setAttribute("idVenta", dao.getLastId() + 1);
+                    request.setAttribute("divMsj", "sr-only");
                     acceso = VENTA;
                     break;
                 case "clientes":

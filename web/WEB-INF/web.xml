@@ -20,6 +20,14 @@
         <servlet-name>Menus</servlet-name>
         <servlet-class>com.dlbs.controlador.Menus</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CerrarSesion</servlet-name>
+        <servlet-class>com.dlbs.controlador.CerrarSesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Pedido</servlet-name>
+        <servlet-class>com.dlbs.controlador.Pedido</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -39,5 +47,13 @@
     <servlet-mapping>
         <servlet-name>Menus</servlet-name>
         <url-pattern>/Menus</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CerrarSesion</servlet-name>
+        <url-pattern>/CerrarSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Pedido</servlet-name>
+        <url-pattern>/Pedido</url-pattern>
     </servlet-mapping>
 </web-app>
